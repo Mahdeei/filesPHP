@@ -10,7 +10,7 @@
 if($db){
     
     $resultUser['server']="connect seccessful";
-
+    
 
 }else{
     $resultUser['server']="not connect";

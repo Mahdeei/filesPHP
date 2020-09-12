@@ -3,27 +3,23 @@ include 'index.php';
 
 
 
-$fieldintern = array(
+$fieldAd = array(
     'title',
-    'company',
-    'date',
-    'numberinternship',
-    'time_work',
-    'type',
     'description',
+    'date',
+    'price',
     'category',
-    'image',
-    'address',
-    'phonenumber',
+    'conditions',
+    'location',
 );
 
-$userid = $_POST['userid'];
+$userid = $_POST['user_id'];
 
-$QueryInsert ="INSERT INTO internship(userid,";
+$QueryInsert ="INSERT INTO advertisings(user_id,";
 $count =0;
 $count2 =0;
 
-foreach ($fieldintern as $field){
+foreach ($fieldAd as $field){
 
     if (isset($_POST[$field])){
        if ($count != (count($_POST)-2)){
@@ -32,7 +28,7 @@ foreach ($fieldintern as $field){
        }else{
            $QueryInsert .= "$field";
            $QueryInsert.= ") VALUES ($userid,";
-           foreach ($fieldintern as $item){
+           foreach ($fieldAd as $item){
                if(isset($_POST[$item])){
                 if ($count2 != (count($_POST) - 2) ){
                     $QueryInsert .= "'".$_POST[$item]."'" .",";
@@ -50,19 +46,13 @@ foreach ($fieldintern as $field){
     }
     
 }
-    print_r($QueryInsert."  End of  ");
+    print_r($QueryInsert."   ");
     if ($db-> query($QueryInsert)){
         $resultUser['status']= 'added' ;
     }else{
     $resultUser['status']= 'error' ;
     print_r($db->error);
 }
-
-
-
-
-
-
 
 
 echo json_encode($resultUser);
