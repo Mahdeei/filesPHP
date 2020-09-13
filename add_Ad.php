@@ -46,7 +46,6 @@ foreach ($fieldAd as $field){
     }
     
 }
-    print_r($QueryInsert."   ");
     if ($db-> query($QueryInsert)){
         $resultUser['status']= 'added' ;
     }else{
