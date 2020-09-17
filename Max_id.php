@@ -1,6 +1,6 @@
 <?php
 
-include 'index.php';
+include 'Server.php';
 $MaxId;
 $Query = "SELECT * FROM user WHERE id = (SELECT MAX(id) FROM user);";
 

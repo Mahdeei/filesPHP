@@ -1,6 +1,6 @@
 <?php
 
-    include  "index.php";
+    include  "Server.php";
 
     if(isset($_POST['id_advertising'] ) && isset($_POST['user_id']) && isset($_POST['req_text']) && isset($_POST['date'])){
         

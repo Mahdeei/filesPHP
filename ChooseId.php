@@ -1,6 +1,6 @@
 <?php
 
-    include 'index.php';
+    include 'Server.php';
     $phonenumberSignUp = $_POST['phone'];
     $checkId="SELECT id FROM user WHERE phonenumber= '".$phonenumberSignUp."'";
             if ($idcheck=$db->query($checkId)) {

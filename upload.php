@@ -1,6 +1,6 @@
 <?php
 
-    include 'index.php';
+    include 'Server.php';
 
     $image = $_FILES['image']['name'];
     // print_r($image);

@@ -1,5 +1,5 @@
 <?php
-include 'index.php';
+include 'Server.php';
 $usrStu = array('fieldUni' , 'skills' , 'resumes', 'educational' , 'certificates' , 'languages');
 
 

@@ -1,6 +1,6 @@
 <?php
 
-include 'index.php';
+include 'Server.php';
 
 if(
     isset($_POST['username'] ) && isset($_POST['name']) && isset($_POST['type']) && isset($_POST['password']) && isset($_POST['phonenumber'])){

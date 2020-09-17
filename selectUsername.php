@@ -1,6 +1,6 @@
 <?php
 
-include 'index.php';
+include 'Server.php';
 
 //if (isset($_POST['id'])){
 //    $id=$_POST['id'];

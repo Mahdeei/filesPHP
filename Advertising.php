@@ -1,6 +1,6 @@
 <?php
 
-include "index.php";
+include "Server.php";
 
 $res=array();
 $num1=$_POST['firstid'];

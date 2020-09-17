@@ -1,5 +1,5 @@
 <?php
-include 'index.php';
+include 'Server.php';
 
 if (isset($_POST['apiToken'])){
     $apiToken = $_POST['apiToken'];

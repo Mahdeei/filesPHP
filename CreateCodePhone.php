@@ -1,6 +1,6 @@
 <?php
 
-include 'index.php';
+include 'Server.php';
 
 if(isset($_POST['phone'])){
     $phonenumber=$_POST['phone'];

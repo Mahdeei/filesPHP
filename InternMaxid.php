@@ -1,6 +1,6 @@
 <?php
 
-include 'index.php';
+include 'Server.php';
 $MaxId;
 $Query = "SELECT * FROM internship WHERE id = (SELECT MAX(id) FROM internship);";
 

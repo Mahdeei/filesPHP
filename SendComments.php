@@ -1,6 +1,6 @@
 <?php
 
-include 'index.php';
+include 'Server.php';
 
     if(isset($_POST['user_id']) && isset($_POST['user_comment']) && isset($_POST['comment_text']) && isset($_POST['date'])){
         $user_id = $_POST['user_id'];

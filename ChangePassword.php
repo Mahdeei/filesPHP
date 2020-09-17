@@ -1,5 +1,5 @@
 <?php
-include 'index.php';
+include 'Server.php';
 
 if( isset($_POST['newPassword']) && isset($_POST['phonenumber']) ) {
     $newPassword = $_POST['newPassword'];
